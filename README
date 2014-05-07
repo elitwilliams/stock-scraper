@@ -1,0 +1,4 @@
+These are several scripts for scraping stock data from various sources including
+Yahoo Finance, Google Finance, and Bloomberg using several methods including
+searching the html source for regular expressions, using JSON and the sites' price
+APIs, and utilizing multithreading with these techniques.
