@@ -9,7 +9,6 @@ def scraper_bloomberg() -> None:
 	Scrapes latest (delayed) price from Bloomberg.com.
 	"""
 	htmltext = urllib.urlopen('http://www.bloomberg.com/markets/watchlist/recent-ticker/AAPL:US')
-
 	data = json.load(htmltext)
 
 	print data["last_price"]
@@ -25,6 +24,7 @@ def scraper_google() -> None:
 	regex = '<span id="ref_[^.]*_l">(.+?)</span>'
 	pattern = re.compile(regex)
 	results = re.findall(pattern,htmltext)
+
 	print results
 
 	return None
